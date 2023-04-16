@@ -8,19 +8,22 @@ function Navbar({ brandLink }) {
       <div className="branding md:text-3xl text-2xl">
         {brandLink === "link" ? (
           <Link to="/" className="flex">
-            <p style={{color:'#1b8de5'}}>Aditya</p>
+            <p style={{color:'#003140'}}>Aditya</p>
             <p className="text-last-light">Dhunna</p>
           </Link>
         ) : (
           <a href="#home" className="flex">
-            <p style={{color:'#1b8de5'}}>Aditya</p>
-            <p className="text-last-light">Dhunna</p>
+            <p style={{color:'#003140'}}>Aditya</p>
+            <p style={{color:'grey'}}>Dhunna</p>
           </a>
         )}
       </div>
       <ul className="flex flex-center md:mt-0 mt-3 md:text-xl text-base">
         <li className="mx-3 text-nav-link-light hover:text-nav-link-light-hover">
           <a href="/#about">About</a>
+        </li>
+        <li className="mx-3 text-nav-link-light hover:text-nav-link-light-hover">
+          <a href="/#internships">Work Experience</a>
         </li>
         <li className="mx-3 text-nav-link-light hover:text-nav-link-light-hover">
           <Link to="/projects">Projects</Link>

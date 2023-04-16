@@ -26,8 +26,8 @@ function Projects() {
   ChangeTitle();
 
   // Bloggy hooks
-  const [showBloggy, setShowBloggy] = useState(false);
-  const closeBloggy = () => setShowBloggy(false);
+  const [showImpuleFit, setShowImpuleFit] = useState(false);
+  const closeImpuleFit = () => setShowImpuleFit(false);
 
   // Chattr hooks
   const [showChattr, setShowChattr] = useState(false);
@@ -63,7 +63,7 @@ function Projects() {
 
   return (
     <div className="font-sans antialiased bg-white">
-      {showBloggy ||
+      {showImpuleFit ||
         showChattr ||
         showPodMaster ||
         showNodeLink ||
@@ -74,7 +74,7 @@ function Projects() {
         showSite ? (
         <div
           onClick={() =>
-            setShowBloggy(false) ||
+            showImpuleFit(false) ||
             setShowChattr(false) ||
             setShowPodMaster(false) ||
             setShowNodeLink(false) ||
@@ -95,7 +95,7 @@ function Projects() {
           <div className="grid md:grid-cols-2 grid-cols-1">
             <div
               className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowBloggy(true)}
+              onClick={() => setShowImpuleFit(true)}
             >
               <p className="text-xl text-center font-light mb-2">Impulse Fit</p>
               <img src={ImpuleFit} alt="ImpuleFit" />
@@ -265,7 +265,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <ImpulseFit showModal={showBloggy} closeModal={closeBloggy} />
+      <ImpulseFit showModal={showImpuleFit} closeModal={closeImpuleFit} />
       <ChattrModal showModal={showChattr} closeModal={closeChattr} />
       <PodMasterModal showModal={showPodMaster} closeModal={closePodMaster} />
       <NodeLinkModal showModal={showNodeLink} closeModal={closeNodeLink} />

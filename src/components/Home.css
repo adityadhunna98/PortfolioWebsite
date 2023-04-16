@@ -15,7 +15,7 @@ html {
 }
 
 .proficient {
-  border: 2px solid #1b8de5;
+  border: 2px solid #003140;
   background-color: #4dacec15;
 }
 
@@ -31,7 +31,7 @@ html {
 
 .ending-msg {
   height: 75px;
-  background-color: #1b8de5;
+  background-color: #003140;
   color: #000;
   width: 100%;
 }

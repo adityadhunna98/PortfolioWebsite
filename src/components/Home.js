@@ -4,6 +4,7 @@ import "./Home.css";
 import Typewriter from "typewriter-effect";
 import { useLocation } from "react-router-dom";
 
+
 export function ChangeTitle() {
   const location = useLocation();
 
@@ -20,12 +21,12 @@ export function ChangeTitle() {
 
 function Home() {
   ChangeTitle();
-  const [age, setAge] = useState(0)
+  // const [age, setAge] = useState(0)
   const [copyright, setCopyright] = useState('')
 
   useEffect(() => {
-    const miliseconds = new Date() - new Date('01/08/2001')
-    setAge(Math.floor(miliseconds / 1000 / 60 / 60 / 24 / 365))
+    // const miliseconds = new Date() - new Date('01/08/2001')
+    // setAge(Math.floor(miliseconds / 1000 / 60 / 60 / 24 / 365))
 
     const year = new Date().getFullYear()
     setCopyright(year)
@@ -35,7 +36,7 @@ function Home() {
   const strings = [
     "software development.",
     "music.",
-    "content creation.",
+    "learning new technologies.",
     "business.",
   ];
 
@@ -66,40 +67,25 @@ function Home() {
       </section>
 
       <section id="about">
-        <div className="flex md:flex-row flex-col justify-between lg:px-16 px-6 pt-36 md:pb-24 sm:pb-28 pb-36">
+        <div className="flex md:flex-row flex-col justify-between lg:px-16 px-6 pt-36 md:pb-415 sm:pb-2 pb-28">
           <div className="p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
             <p className="about-header md:text-3xl text-2xl mb-4 font-medium">
               About Me
             </p>
             <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-              Hello there! My name is Aditya Dhunna and I am a {age}-year-old
-              programmer. I enjoy creating apps and websites that can express my creativity and to build meaningful products.{" "}
+            Hello! I'm Aditya Dhunna, a B.Tech student from IPEC(AKTU). I'm currently pursuing my degree in ECE and have gained real-world experience through internships at KPMG India and Octro Inc. My passion lies in website development, and I have hands-on experience in ReactJS, MYSQL, Flask,MERN Stack. I'm a dedicated learner, constantly improving my skills and staying updated with industry trends.
             </p>
             <br></br>
             <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-              During my free time, I create content surrounding technology and
-              programming on{" "}
-              <a
-                href="https://youtube.com/c/ArpanNeupaneProductions"
-                target="__blank"
-              >
-                YouTube
-              </a>
-              . When I'm not programming or making content, you can find me playing the guitar, spending time with people, cooking, or reading. I'm also an author at{" "}
-              <a href="https://themorningnews.com/news/author/arpanneupane/" target="__blank">
-                TheMorningNews
-              </a>
-              .
+            Apart from my academic pursuits, I'm enthusiastic about Cricket, Music, Travelling, which adds to my well-rounded personality. I believe in "designing websites that leave an impression." and strive to deliver high-quality work that exceeds expectations. I'm committed to maintaining a healthy work-life balance and actively engaging in my community.
             </p>
             <br></br>
             <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-              I'm always looking forward to learning new technologies and improving
-              my work in any way possible. If you want to contact me regarding any of my products, any ideas, or just want to chat,
-              you're welcome to email me at{" "}
+            I'm excited to showcase my skills and projects through my portfolio website and explore new opportunities in website development. Please feel free to browse my portfolio and reach out to me for inquiries or collaborations. Let's create amazing websites together{" "}
               <a href="mailto:adityadhunna98@gmail.com" target="__blank">
                 adityadhunna98@gmail.com
               </a>
-              .
+               !
             </p>
           </div>
           <div className="p-4 md:w-1/2 w-1/1 md:mx-4">
@@ -132,13 +118,6 @@ function Home() {
                     <p className="text-base">SQL</p>
                   </div>
                 </div>
-
-                {/* BEGINNER ROW */}
-                {/* <div className="beginner-row flex flex-wrap">
-                  <div className="p-1 beginner rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">Java</p>
-                  </div>
-                </div> */}
               </div>
 
               {/* FRAMEWORKS/LIBRARIES */}
@@ -190,7 +169,7 @@ function Home() {
                     <p className="text-base">Git</p>
                   </div>
                   <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">Canva</p>
+                    <p className="text-base">Github</p>
                   </div>
                 </div>
 
@@ -202,23 +181,33 @@ function Home() {
                   <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">Figma</p>
                   </div>
-
-                  {/* <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">Autodesk Fusion 360</p>
-                  </div> */}
-                </div>
-
-                {/* BEGINNER ROW */}
-                {/* <div className="beginner-row flex flex-wrap">
-                  <div className="p-1 beginner rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">Xcode</p>
+                  <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
+                    <p className="text-base">Canva</p>
                   </div>
-                </div> */}
-
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </section>
+      <section id="internships">    
+      <div className=" lg:px-16 px-6 pt-36 md:pb-36 sm:pb-2 pb-36">
+      <div className="p-4 md:w-1.2/2 w-1/1 md:mx-4 md:mb-0 mb-6">
+            <p className="about-header md:text-3xl text-2xl mb-4 font-medium">
+              Internships
+            </p>
+
+
+      <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
+            I'm excited to showcase my skills and projects through my portfolio website and explore new opportunities in website development. Please feel free to browse my portfolio and reach out to me for inquiries or collaborations. Let's create amazing websites together{" "}
+              <a href="mailto:adityadhunna98@gmail.com" target="__blank">
+                adityadhunna98@gmail.com
+              </a>
+               !
+      </p>    
+      </div>
+      </div>
+  
       </section>
       <div className="ending-msg font-light text-center absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center">
         <p style={{color:'white'}}><b>Created with ❤️ by Aditya Dhunna. </b></p>
