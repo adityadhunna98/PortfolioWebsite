@@ -8,12 +8,12 @@ function Navbar({ brandLink }) {
       <div className="branding md:text-3xl text-2xl">
         {brandLink === "link" ? (
           <Link to="/" className="flex">
-            <p className="text-first-light">Aditya</p>
+            <p style={{color:'#1b8de5'}}>Aditya</p>
             <p className="text-last-light">Dhunna</p>
           </Link>
         ) : (
           <a href="#home" className="flex">
-            <p className="text-first-light">Aditya</p>
+            <p style={{color:'#1b8de5'}}>Aditya</p>
             <p className="text-last-light">Dhunna</p>
           </a>
         )}

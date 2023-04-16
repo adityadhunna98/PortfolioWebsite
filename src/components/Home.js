@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import homeImg from "./images/home-image.gif";
+import homeImage from "./images/homeImage.gif";
 import "./Home.css";
 import Typewriter from "typewriter-effect";
 import { useLocation } from "react-router-dom";
@@ -58,7 +58,9 @@ function Home() {
             </p>
           </div>
           <div className="gif">
-            <img src={homeImg} alt="programmer-gif" width="500" />
+            <homeImage/>
+           {/* <iframe title='gif' src="https://giphy.com/embed/qgQUggAC3Pfv687qPC" width="500" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe> */}
+             <img src={homeImage} alt="programmer-gif" width="500" />
           </div>
         </div>
       </section>
@@ -111,20 +113,20 @@ function Home() {
                 {/* PROFICIENT ROW */}
                 <div className="proficient-row flex flex-wrap mb-1">
                   <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">Python</p>
-                  </div>
-                  <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">JavaScript</p>
+                    <p className="text-base">C/C++</p>
                   </div>
                   <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">HTML/CSS</p>
+                  </div>
+                  <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
+                    <p className="text-base">JavaScript</p>
                   </div>
                 </div>
 
                 {/* INTERMEDIATE ROW */}
                 <div className="intermediate-row flex flex-wrap mb-1">
                   <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">TypeScript</p>
+                    <p className="text-base">Python</p>
                   </div>
                   <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">SQL</p>
@@ -132,11 +134,11 @@ function Home() {
                 </div>
 
                 {/* BEGINNER ROW */}
-                <div className="beginner-row flex flex-wrap">
+                {/* <div className="beginner-row flex flex-wrap">
                   <div className="p-1 beginner rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">Java</p>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* FRAMEWORKS/LIBRARIES */}
@@ -157,14 +159,14 @@ function Home() {
                     <p className="text-base">Tailwind</p>
                   </div>
                   <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">UIkit</p>
+                    <p className="text-base">Material UI</p>
                   </div>
                 </div>
 
                 {/* INTERMEDIATE ROW */}
                 <div className="intermediate-row flex flex-wrap mb-1">
                   <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
-                    <p className="text-base">React Native</p>
+                    <p className="text-base">ANTD</p>
                   </div>
                   <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">Chakra UI</p>
@@ -201,17 +203,17 @@ function Home() {
                     <p className="text-base">Figma</p>
                   </div>
 
-                  <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
+                  {/* <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">Autodesk Fusion 360</p>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* BEGINNER ROW */}
-                <div className="beginner-row flex flex-wrap">
+                {/* <div className="beginner-row flex flex-wrap">
                   <div className="p-1 beginner rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">Xcode</p>
                   </div>
-                </div>
+                </div> */}
 
               </div>
             </div>
@@ -219,8 +221,8 @@ function Home() {
         </div>
       </section>
       <div className="ending-msg font-light text-center absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center">
-        <p>Created with ❤️ by Aditya Dhunna.</p>
-        <p>© {copyright} Aditya Dhunna. All rights reserved.</p>
+        <p style={{color:'white'}}><b>Created with ❤️ by Aditya Dhunna. </b></p>
+        <p style={{color:'white'}}><b>© {copyright} Aditya Dhunna. All rights reserved.</b></p>
       </div>
     </div>
   );

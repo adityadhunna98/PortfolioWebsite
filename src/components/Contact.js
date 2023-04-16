@@ -1,7 +1,8 @@
 import React from "react";
 import { ChangeTitle } from "./Home.js";
 import {
-  AiFillYoutube,
+  // AiFillYoutube,
+  AiOutlineLinkedin,
   AiFillMail,
   AiFillGithub,
   AiFillTwitterCircle,
@@ -30,26 +31,26 @@ function Contact() {
 
             <Tooltip title="GitHub">
               <div className="contact-item github my-2 mx-2 text-3xl">
-                <a href="https://github.com/arpanneupane19" target="__blank">
+                <a href="https://github.com/adityadhunna98" target="__blank">
                   <AiFillGithub />
                 </a>
               </div>
             </Tooltip>
 
-            <Tooltip title="YouTube">
-              <div className="contact-item youtube my-2 mx-2 text-3xl">
+            <Tooltip title="LinkedIn">
+              <div className="contact-item linkedin my-2 mx-2 text-3xl">
                 <a
-                  href="https://youtube.com/ArpanNeupaneProductions"
+                  href="https://www.linkedin.com/in/aditya-dhunna-6649a4175/"
                   target="__blank"
                 >
-                  <AiFillYoutube />
+                  <AiOutlineLinkedin />
                 </a>
               </div>
             </Tooltip>
 
             <Tooltip title="Twitter">
               <div className="contact-item twitter my-2 mx-2 text-3xl">
-                <a href="https://twitter.com/arpanneup" target="__blank">
+                <a href="https://twitter.com/AdityaDhunna2" target="__blank">
                   <AiFillTwitterCircle />
                 </a>
               </div>

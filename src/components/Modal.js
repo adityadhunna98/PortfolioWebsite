@@ -1,7 +1,7 @@
 import React from "react";
 import "./Modal.css";
 
-export function BloggyModal({ showModal, closeModal }) {
+export function ImpulseFit({ showModal, closeModal }) {
   return (
     <div
       className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
@@ -12,54 +12,25 @@ export function BloggyModal({ showModal, closeModal }) {
     >
       <div className="modal-info flex flex-col">
         <div className="flex flex-row justify-between items-center mb-4">
-          <h4 className="text-left text-lg font-medium">Bloggy</h4>
+          <h4 className="text-left text-lg font-medium">Impulse Fit</h4>
           <p onClick={closeModal} className="cursor-pointer">
             &times;
           </p>
         </div>
         <div className="project-info">
           <p className="font-light text-sm tracking-wide">
-            Bloggy is a blog-posting platform created using{" "}
-            <a href="https://python.org" target="__blank">
-              Python
-            </a>{" "}
-            &{" "}
-            <a
-              href="https://flask.palletsprojects.com/en/2.0.x/"
-              target="__blank"
-            >
-              Flask
-            </a>{" "}
-            for the backend and HTML/CSS for the frontend along with{" "}
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-              target="__blank"
-            >
-              JavaScript
-            </a>
-            . It also uses{" "}
-            <a href="https://www.postgresql.org/" target="__blank">
-              PostgreSQL
-            </a>{" "}
-            to store data. It also has its own API for users to display their
-            data on other apps.
+          ImpuleFit is an Fitness website made with the help of HTML5, CSS3, JavaScript and made responsive with the help of tailwind css.{" "}
+            
             <br></br>
-            <br></br>
-            Users can login/register, make posts, update posts, delete posts,
-            comment, like posts, search for users, follow users, and message
-            users using{" "}
-            <a href="https://socket.io" target="__blank">
-              Socket.io
-            </a>
-            ! Check out the git repository{" "}
+            Check out the git repository{" "}
             <a
-              href="https://github.com/arpanneupane19/bloggy-webapp"
+              href="https://github.com/adityadhunna98/ImpuleFit"
               target="__blank"
             >
               here
             </a>{" "}
             and the app{" "}
-            <a href="https://bloggyweb.herokuapp.com" target="__blank">
+            <a href="https://impulsefit.netlify.app/" target="__blank">
               here
             </a>
             !

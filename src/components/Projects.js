@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import { ChangeTitle } from "./Home.js";
-import Bloggy from "./images/bloggy.png";
+import ImpuleFit from "./images/impulsefit.png";
 import Chattr from "./images/chattr.png";
 import PodMaster from "./images/podmaster.png";
 import NodeLink from "./images/nodelink.png";
@@ -11,7 +11,7 @@ import SecuroChat from "./images/securochat.png";
 import Todos from "./images/todos.png";
 import Website from "./images/website.png";
 import {
-  BloggyModal,
+  ImpulseFit,
   ChattrModal,
   PodMasterModal,
   NodeLinkModal,
@@ -97,17 +97,17 @@ function Projects() {
               className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
               onClick={() => setShowBloggy(true)}
             >
-              <p className="text-xl text-center font-light mb-2">Bloggy</p>
-              <img src={Bloggy} alt="Bloggy" />
+              <p className="text-xl text-center font-light mb-2">Impulse Fit</p>
+              <img src={ImpuleFit} alt="ImpuleFit" />
               <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Python</p>
+                  <p className="font-light text-center">HTML</p>
                 </div>
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Socket.io</p>
+                  <p className="font-light text-center">CSS</p>
                 </div>
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">PostgreSQL</p>
+                  <p className="font-light text-center">JavaScript</p>
                 </div>
               </div>
             </div>
@@ -265,7 +265,7 @@ function Projects() {
           </div>
         </div>
       </div>
-      <BloggyModal showModal={showBloggy} closeModal={closeBloggy} />
+      <ImpulseFit showModal={showBloggy} closeModal={closeBloggy} />
       <ChattrModal showModal={showChattr} closeModal={closeChattr} />
       <PodMasterModal showModal={showPodMaster} closeModal={closePodMaster} />
       <NodeLinkModal showModal={showNodeLink} closeModal={closeNodeLink} />
