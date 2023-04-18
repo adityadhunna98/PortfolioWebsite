@@ -23,7 +23,7 @@ function Navbar({ brandLink }) {
           <a href="/#about">About</a>
         </li>
         <li className="mx-3 text-nav-link-light hover:text-nav-link-light-hover">
-          <a href="/#internships">Work Experience</a>
+          <a href="/#workexperience">Work Experience</a>
         </li>
         <li className="mx-3 text-nav-link-light hover:text-nav-link-light-hover">
           <Link to="/projects">Projects</Link>
