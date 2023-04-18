@@ -191,7 +191,7 @@ export function SiteModal({ showModal, closeModal }) {
         </div>
         <div className="project-info">
           <p className="font-light text-sm tracking-wide">
-            This is the fourth iteration of my personal website. I built this
+            This is my personal portfolio website showcasing all my experiences and projects. I built this
             website using{" "}
             <a href="https://reactjs.org" target="__blank">
               React
@@ -202,7 +202,7 @@ export function SiteModal({ showModal, closeModal }) {
             </a>
             . Check out the git repository{" "}
             <a
-              href="https://github.com/arpanneupane19/portfolioWeb"
+              href="https://github.com/adityadhunna98/PortfolioWebsite"
               target="__blank"
             >
               here
