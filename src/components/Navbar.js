@@ -12,10 +12,10 @@ function Navbar({ brandLink }) {
             <p className="text-last-light">Dhunna</p>
           </Link>
         ) : (
-          <a href="#home" className="flex">
+          <Link to="/" className="flex">
             <p style={{color:'#003140'}}>Aditya</p>
             <p style={{color:'grey'}}>Dhunna</p>
-          </a>
+          </Link>
         )}
       </div>
       <ul className="flex flex-center md:mt-0 mt-3 md:text-xl text-base">
@@ -23,7 +23,7 @@ function Navbar({ brandLink }) {
           <a href="/#about">About</a>
         </li>
         <li className="mx-3 text-nav-link-light hover:text-nav-link-light-hover">
-          <a href="/#workexperience">Work Experience</a>
+          <Link to="/experience">Experience</Link>
         </li>
         <li className="mx-3 text-nav-link-light hover:text-nav-link-light-hover">
           <Link to="/projects">Projects</Link>

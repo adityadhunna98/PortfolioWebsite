@@ -68,7 +68,7 @@ function Home() {
       </section>
 
       <section id="about">
-        <div className="flex md:flex-row flex-col justify-between lg:px-16 px-6 pt-36 md:pb-415 sm:pb-2 pb-28">
+        <div className="flex md:flex-row flex-col justify-between lg:px-16 px-6 pt-36 md:pb-36 sm:pb-8 pb-36">
           <div className="p-4 md:w-1/2 w-1/1 md:mx-4 md:mb-0 mb-6">
             <p className="about-header md:text-3xl text-2xl mb-4 font-medium">
               About Me
@@ -205,7 +205,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="workexperience">
+      {/* <section id="workexperience">
         <div className=" lg:px-16 px-6 pt-36 md:pb-36 sm:pb-2 pb-36">
           <div className="p-4 md:mx-4 md:mb-0 mb-6">
             <p className="about-header md:text-3xl text-2xl mb-4 font-medium">
@@ -237,7 +237,7 @@ enhance my contributions to the project.
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       <div className="ending-msg font-light text-center absolute bottom-0 left-0 right-0 flex flex-col items-center justify-center">
         <p style={{ color: "white" }}>
           <b>Created with ❤️ by Aditya Dhunna. </b>

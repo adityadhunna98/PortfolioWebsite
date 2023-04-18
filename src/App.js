@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 import PageNotFound from "./components/PageNotFound";
 import ScrollToTop from "./components/ScrollToTop";
 import HttpsRedirect from "react-https-redirect";
@@ -25,6 +26,10 @@ function App() {
           <Route exact path="/contact">
             <Navbar brandLink={"link"} />
             <Contact />
+          </Route>
+          <Route exact path="/experience">
+            {/* <Navbar brandLink={"link"} /> */}
+            <Experience />
           </Route>
           <Route path="*">
             <Navbar brandLink={"link"} />
