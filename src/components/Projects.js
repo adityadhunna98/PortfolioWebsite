@@ -5,20 +5,12 @@ import ImpuleFit from "./images/impulsefit.png";
 import NetflixClone from "./images/NetflixClone.png";
 import SubmitForm from "./images/SubmitForm.png";
 import TalkATive from "./images/TalkATive.png";
-import PasswordProtect from "./images/password-protect.png";
-import WeatherWizard from "./images/weatherwiz.png";
-import SecuroChat from "./images/securochat.png";
-import Todos from "./images/todos.png";
 import Website from "./images/website.png";
 import {
   ImpulseFit,
   NetflixCloneModal,
   SubmitFormModal,
   TalkATiveModal,
-  PasswordProtectModal,
-  WeatherWizModal,
-  SecuroChatModal,
-  TodosModal,
   SiteModal,
 } from "./Modal";
 
@@ -41,22 +33,6 @@ function Projects() {
   const [showTalkATive, setShowTalkATive] = useState(false);
   const closeTalkATive = () => setShowTalkATive(false);
 
-  // Password Protect hooks
-  const [showPasswordProtect, setShowPasswordProtect] = useState(false);
-  const closePasswordProtect = () => setShowPasswordProtect(false);
-
-  // Weather Wizard hooks
-  const [showWeather, setShowWeather] = useState(false);
-  const closeWeather = () => setShowWeather(false);
-
-  // SecuroChat hooks
-  const [showSecuroChat, setShowSecuroChat] = useState(false);
-  const closeSecuroChat = () => setShowSecuroChat(false);
-
-  // Todos hooks
-  const [showTodos, setShowTodos] = useState(false);
-  const closeTodos = () => setShowTodos(false);
-
   // Site hooks
   const [showSite, setShowSite] = useState(false);
   const closeSite = () => setShowSite(false);
@@ -67,10 +43,6 @@ function Projects() {
         showNetflixClone ||
         showSubmitForm ||
         showTalkATive ||
-        showPasswordProtect ||
-        showWeather ||
-        showSecuroChat ||
-        showTodos ||
         showSite ? (
         <div
           onClick={() =>
@@ -78,10 +50,6 @@ function Projects() {
             setShowNetflixClone(false) ||
             setShowSubmitForm(false) ||
             setShowTalkATive(false) ||
-            setShowPasswordProtect(false) ||
-            setShowWeather(false) ||
-            setShowSecuroChat(false) ||
-            setShowTodos(false) ||
             setShowSite(false)
           }
           className="backdrop"
@@ -93,6 +61,23 @@ function Projects() {
             Projects
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1">
+          <div
+              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
+              onClick={() => setShowSite(true)}
+            >
+              <p className="text-xl text-center font-light mb-2">
+                This Website
+              </p>
+              <img src={Website} alt="Website" />
+              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
+                <div className="tool p-1 rounded-lg m-0.5">
+                  <p className="font-light text-center">React</p>
+                </div>
+                <div className="tool p-1 rounded-lg m-0.5">
+                  <p className="font-light text-center">Tailwind CSS</p>
+                </div>
+              </div>
+            </div>
           <div
               className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
               onClick={() => setShowTalkATive(true)}
@@ -170,102 +155,6 @@ function Projects() {
             </div>
             
 
-            <div
-              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowSecuroChat(true)}
-            >
-              <p className="text-xl text-center font-light mb-2">
-                SecuroChat
-              </p>
-              <img src={SecuroChat} alt="SecuroChat" />
-              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">React</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Node</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Socket.io</p>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowWeather(true)}
-            >
-              <p className="text-xl text-center font-light mb-2">
-                Weather Wizard
-              </p>
-              <img src={WeatherWizard} alt="Weather Wizard" />
-              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">React</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">React Native</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Expo</p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowPasswordProtect(true)}
-            >
-              <p className="text-xl text-center font-light mb-2">
-                Password Protect
-              </p>
-              <img src={PasswordProtect} alt="Password Protect" />
-              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">React</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">React Native</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Expo</p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowSite(true)}
-            >
-              <p className="text-xl text-center font-light mb-2">
-                This Website
-              </p>
-              <img src={Website} alt="Website" />
-              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">React</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Tailwind CSS</p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowTodos(true)}
-            >
-              <p className="text-xl text-center font-light mb-2">Todos</p>
-              <img src={Todos} alt="Todos" />
-              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Python</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">HTML/CSS</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">PostgreSQL</p>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -273,16 +162,6 @@ function Projects() {
       <NetflixCloneModal showModal={showNetflixClone} closeModal={closeNetflixClone} />
       <SubmitFormModal showModal={showSubmitForm} closeModal={closeSubmitForm} />
       <TalkATiveModal showModal={showTalkATive} closeModal={closeTalkATive} />
-      <PasswordProtectModal
-        showModal={showPasswordProtect}
-        closeModal={closePasswordProtect}
-      />
-      <WeatherWizModal showModal={showWeather} closeModal={closeWeather} />
-      <SecuroChatModal
-        showModal={showSecuroChat}
-        closeModal={closeSecuroChat}
-      />
-      <TodosModal showModal={showTodos} closeModal={closeTodos} />
       <SiteModal showModal={showSite} closeModal={closeSite} />
     </div>
   );
