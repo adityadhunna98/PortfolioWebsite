@@ -196,7 +196,7 @@ function Home() {
                   <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">Figma</p>
                   </div>
-                  <div className="p-1 proficient rounded-lg m-1 flex items-center h-8">
+                  <div className="p-1 intermediate rounded-lg m-1 flex items-center h-8">
                     <p className="text-base">Canva</p>
                   </div>
                 </div>

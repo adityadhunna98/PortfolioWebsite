@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./Projects.css";
 import { ChangeTitle } from "./Home.js";
 import ImpuleFit from "./images/impulsefit.png";
-import Chattr from "./images/chattr.png";
-import PodMaster from "./images/podmaster.png";
-import NodeLink from "./images/nodelink.png";
+import NetflixClone from "./images/NetflixClone.png";
+import SubmitForm from "./images/SubmitForm.png";
+import TalkATive from "./images/TalkATive.png";
 import PasswordProtect from "./images/password-protect.png";
 import WeatherWizard from "./images/weatherwiz.png";
 import SecuroChat from "./images/securochat.png";
@@ -12,9 +12,9 @@ import Todos from "./images/todos.png";
 import Website from "./images/website.png";
 import {
   ImpulseFit,
-  ChattrModal,
-  PodMasterModal,
-  NodeLinkModal,
+  NetflixCloneModal,
+  SubmitFormModal,
+  TalkATiveModal,
   PasswordProtectModal,
   WeatherWizModal,
   SecuroChatModal,
@@ -29,17 +29,17 @@ function Projects() {
   const [showImpuleFit, setShowImpuleFit] = useState(false);
   const closeImpuleFit = () => setShowImpuleFit(false);
 
-  // Chattr hooks
-  const [showChattr, setShowChattr] = useState(false);
-  const closeChattr = () => setShowChattr(false);
+  // NetflixClone hooks
+  const [showNetflixClone, setShowNetflixClone] = useState(false);
+  const closeNetflixClone = () => setShowNetflixClone(false);
 
-  // PodMaster hooks
-  const [showPodMaster, setShowPodMaster] = useState(false);
-  const closePodMaster = () => setShowPodMaster(false);
+  // SubmitForm hooks
+  const [showSubmitForm, setShowSubmitForm] = useState(false);
+  const closeSubmitForm = () => setShowSubmitForm(false);
 
-  // NodeLink hooks
-  const [showNodeLink, setShowNodeLink] = useState(false);
-  const closeNodeLink = () => setShowNodeLink(false);
+  // TalkATive hooks
+  const [showTalkATive, setShowTalkATive] = useState(false);
+  const closeTalkATive = () => setShowTalkATive(false);
 
   // Password Protect hooks
   const [showPasswordProtect, setShowPasswordProtect] = useState(false);
@@ -64,9 +64,9 @@ function Projects() {
   return (
     <div className="font-sans antialiased bg-white">
       {showImpuleFit ||
-        showChattr ||
-        showPodMaster ||
-        showNodeLink ||
+        showNetflixClone ||
+        showSubmitForm ||
+        showTalkATive ||
         showPasswordProtect ||
         showWeather ||
         showSecuroChat ||
@@ -75,9 +75,9 @@ function Projects() {
         <div
           onClick={() =>
             showImpuleFit(false) ||
-            setShowChattr(false) ||
-            setShowPodMaster(false) ||
-            setShowNodeLink(false) ||
+            setShowNetflixClone(false) ||
+            setShowSubmitForm(false) ||
+            setShowTalkATive(false) ||
             setShowPasswordProtect(false) ||
             setShowWeather(false) ||
             setShowSecuroChat(false) ||
@@ -93,6 +93,27 @@ function Projects() {
             Projects
           </p>
           <div className="grid md:grid-cols-2 grid-cols-1">
+          <div
+              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
+              onClick={() => setShowTalkATive(true)}
+            >
+              <p className="text-xl text-center font-light mb-2">TalkATive</p>
+              <img src={TalkATive} alt="TalkATive" />
+              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
+                <div className="tool p-1 rounded-lg m-0.5">
+                  <p className="font-light text-center">React</p>
+                </div>
+                <div className="tool p-1 rounded-lg m-0.5">
+                  <p className="font-light text-center">Node</p>
+                </div>
+                <div className="tool p-1 rounded-lg m-0.5">
+                  <p className="font-light text-center">Express</p>
+                </div>
+                <div className="tool p-1 rounded-lg m-0.5">
+                  <p className="font-light text-center">MongoDB</p>
+                </div>
+              </div>
+            </div>
             <div
               className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
               onClick={() => setShowImpuleFit(true)}
@@ -113,58 +134,41 @@ function Projects() {
             </div>
             <div
               className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowChattr(true)}
+              onClick={() => setShowNetflixClone(true)}
             >
-              <p className="text-xl text-center font-light mb-2">Chattr</p>
-              <img src={Chattr} alt="Chattr" />
+              <p className="text-xl text-center font-light mb-2">Netflix Clone</p>
+              <img src={NetflixClone} alt="Netflix Clone" />
               <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Python</p>
+                  <p className="font-light text-center">HTML</p>
                 </div>
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Socket.io</p>
+                  <p className="font-light text-center">CSS</p>
                 </div>
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">UIkit</p>
+                  <p className="font-light text-center">React Js</p>
                 </div>
               </div>
             </div>
             <div
               className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowPodMaster(true)}
+              onClick={() => setShowSubmitForm(true)}
             >
-              <p className="text-xl text-center font-light mb-2">PodMaster</p>
-              <img src={PodMaster} alt="PodMaster" />
-              <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Python</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">React</p>
-                </div>
-                <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Tailwind CSS</p>
-                </div>
-              </div>
-            </div>
-            <div
-              className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
-              onClick={() => setShowNodeLink(true)}
-            >
-              <p className="text-xl text-center font-light mb-2">NodeLink</p>
-              <img src={NodeLink} alt="NodeLink" />
+              <p className="text-xl text-center font-light mb-2">Survey Form</p>
+              <img src={SubmitForm} alt="Survey Form" />
               <div className="tools flex flex-wrap justify-evenly items-center mt-1.5">
                 <div className="tool p-1 rounded-lg m-0.5">
                   <p className="font-light text-center">React</p>
                 </div>
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Node</p>
+                  <p className="font-light text-center">AntD</p>
                 </div>
                 <div className="tool p-1 rounded-lg m-0.5">
-                  <p className="font-light text-center">Tailwind CSS</p>
+                  <p className="font-light text-center">Flask</p>
                 </div>
               </div>
             </div>
+            
 
             <div
               className="project md:py-7 md:px-6 py-5 px-4 flex flex-col items-center mx-3 my-3"
@@ -266,9 +270,9 @@ function Projects() {
         </div>
       </div>
       <ImpulseFit showModal={showImpuleFit} closeModal={closeImpuleFit} />
-      <ChattrModal showModal={showChattr} closeModal={closeChattr} />
-      <PodMasterModal showModal={showPodMaster} closeModal={closePodMaster} />
-      <NodeLinkModal showModal={showNodeLink} closeModal={closeNodeLink} />
+      <NetflixCloneModal showModal={showNetflixClone} closeModal={closeNetflixClone} />
+      <SubmitFormModal showModal={showSubmitForm} closeModal={closeSubmitForm} />
+      <TalkATiveModal showModal={showTalkATive} closeModal={closeTalkATive} />
       <PasswordProtectModal
         showModal={showPasswordProtect}
         closeModal={closePasswordProtect}

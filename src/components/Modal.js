@@ -41,7 +41,7 @@ export function ImpulseFit({ showModal, closeModal }) {
   );
 }
 
-export function ChattrModal({ showModal, closeModal }) {
+export function NetflixCloneModal({ showModal, closeModal }) {
   return (
     <div
       className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
@@ -52,42 +52,22 @@ export function ChattrModal({ showModal, closeModal }) {
     >
       <div className="modal-info flex flex-col">
         <div className="flex flex-row justify-between items-center mb-4">
-          <h4 className="text-left text-lg font-medium">Chattr</h4>
+          <h4 className="text-left text-lg font-medium">Netflix Clone</h4>
           <p onClick={closeModal} className="cursor-pointer">
             &times;
           </p>
         </div>
         <div className="project-info">
           <p className="font-light text-sm tracking-wide">
-            Chattr is a team communication platform. It was created using{" "}
-            <a href="https://python.org" target="__blank">
-              Python
-            </a>{" "}
-            &{" "}
-            <a
-              href="https://flask.palletsprojects.com/en/2.0.x/"
-              target="__blank"
-            >
-              Flask
-            </a>{" "}
-            for the backend and{" "}
-            <a href="https://getuikit.com" target="__blank">
-              UIkit
-            </a>{" "}
-            for the frontend. It also uses{" "}
-            <a href="https://www.postgresql.org" target="__blank">
-              PostgreSQL
-            </a>{" "}
-            to store data.
+          Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more - on thousands of internet-connected devices.
             <br></br>
             <br></br>
-            Users can login/register, create teams, invite others, and
-            communicate with each other! Check out the git repository{" "}
-            <a href="https://github.com/arpanneupane19/Chattr" target="__blank">
+            I have made a static clone for the same you can check it out at{" "}
+            {/* <a href="https://github.com/arpanneupane19/Chattr" target="__blank">
               here
             </a>{" "}
-            and the app{" "}
-            <a href="https://chattrweb.herokuapp.com" target="__blank">
+            and the app{" "} */}
+            <a href="https://clone-net-flix.netlify.app/" target="__blank">
               here
             </a>
             !
@@ -99,7 +79,7 @@ export function ChattrModal({ showModal, closeModal }) {
 }
 
 
-export function PodMasterModal({ showModal, closeModal }) {
+export function SubmitFormModal({ showModal, closeModal }) {
   return (
     <div
       className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
@@ -110,18 +90,18 @@ export function PodMasterModal({ showModal, closeModal }) {
     >
       <div className="modal-info flex flex-col">
         <div className="flex flex-row justify-between items-center mb-4">
-          <h4 className="text-left text-lg font-medium">PodMaster</h4>
+          <h4 className="text-left text-lg font-medium">Survey Form</h4>
           <p onClick={closeModal} className="cursor-pointer">
             &times;
           </p>
         </div>
         <div className="project-info">
           <p className="font-light text-sm tracking-wide">
-            PodMaster is a podcast uploading platform. It can be used to upload and promote podcasts! It was created using{" "}
-            <a href="https://python.org" target="__blank">
+            Survey Form is a React Js made up the help of AntD library. It performs all the CRUD operations from Creatind to Deletion. I have used{" "}
+            {/* <a href="https://python.org" target="__blank">
               Python
             </a>{" "}
-            &{" "}
+            &{" "} */}
             <a
               href="https://flask.palletsprojects.com/en/2.0.x/"
               target="__blank"
@@ -135,8 +115,8 @@ export function PodMasterModal({ showModal, closeModal }) {
             for the frontend.
             <br></br>
             <br></br>
-            Users can login/register, create podcasts, follow other users, as well as like and comment on podcasts! Check out the git repository{" "}
-            <a href="https://github.com/arpanneupane19/PodMaster" target="__blank">
+            Users can add, read, update and delete every entry they do. Check it out {" "}
+            <a href="https://github.com/adityadhunna98/Submit-form" target="__blank">
               here
             </a>!
           </p>
@@ -146,7 +126,7 @@ export function PodMasterModal({ showModal, closeModal }) {
   );
 }
 
-export function NodeLinkModal({ showModal, closeModal }) {
+export function TalkATiveModal({ showModal, closeModal }) {
   return (
     <div
       className="modal bg-white lg:w-1/3 md:w-3/5 w-5/6 p-4 m-8 rounded-lg fixed top-1/4"
@@ -157,17 +137,19 @@ export function NodeLinkModal({ showModal, closeModal }) {
     >
       <div className="modal-info flex flex-col">
         <div className="flex flex-row justify-between items-center mb-4">
-          <h4 className="text-left text-lg font-medium">NodeLink</h4>
+          <h4 className="text-left text-lg font-medium">Talk - A -Tive</h4>
           <p onClick={closeModal} className="cursor-pointer">
             &times;
           </p>
         </div>
         <div className="project-info">
           <p className="font-light text-sm tracking-wide">
-            NodeLink is an app where users can connect with their audiences
-            using just one link. It uses{" "}
+          “Talk - A -Tive” is a ed-tech application to make a community for Istudents based on their field of interest. It will shorten the bridge between students and help them connect and interact better. It uses{" "}
             <a href="https://expressjs.com/" target="__blank">
               Express
+            </a>{" "}
+            & <a href="https://nodejs.org/en" target="__blank">
+              Node
             </a>{" "}
             for the backend and{" "}
             <a href="https://reactjs.org" target="__blank">
@@ -176,16 +158,13 @@ export function NodeLinkModal({ showModal, closeModal }) {
             for the frontend.
             <br></br>
             <br></br>
-            Users can register and a site will be created for them, and they can
-            add links to the site to connect their audiences. Users can also
-            customize their site. Check out the git repository{" "}
+            Check out the git repository{" "}
             <a
-              href="https://github.com/arpanneupane19/NodeLink"
+              href="https://github.com/adityadhunna98/TalkATive"
               target="__blank"
             >
-              here
-            </a>{" "}
-            and the app <a href="https://nodelinkapp.herokuapp.com">here</a>!
+              here!
+            </a>
           </p>
         </div>
       </div>
