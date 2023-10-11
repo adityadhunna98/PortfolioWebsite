@@ -56,7 +56,7 @@ function Experience() {
             </h4>
 
             <p> Electronics and Communication (E.C.E)</p>
-            <p> 8.14/10</p>
+            <p> 8.21/10</p>
           </VerticalTimelineElement>
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
@@ -85,10 +85,11 @@ function Experience() {
             </h3>
             <h4 className="vertical-timeline-element-subtitle">Noida, India</h4>
             <p>
-              Showcased full-stack expertise in front-end and back-end
+              {/* Showcased full-stack expertise in front-end and back-end
               development, including user module interface design that reduced
               user addition time by 90%, while proactively acquiring new
-              technologies to enhance project contributions.
+              technologies to enhance project contributions. */}
+              As an SDE Intern at Octro Inc., I adeptly managed full-stack applications, optimized the user addition process, and boosted project efficiency by 40% through the implementation of ReactJS, Flask, AntD, and MySQL technologies.
             </p>
           </VerticalTimelineElement>
 
@@ -99,16 +100,38 @@ function Experience() {
             icon={<WorkIcon />}
           >
             <h3 className="vertical-timeline-element-title">
-              Analyst Intern - KPMG India
+              Software Developer Intern - KPMG India
             </h3>
             <h4 className="vertical-timeline-element-subtitle">
               Gurugram, India
             </h4>
             <p>
-              Collaborated with team to design, develop, and maintain web-based
+              {/* Collaborated with team to design, develop, and maintain web-based
               applications using MERN stack, including scalable back-end systems
               with NodeJS and MongoDB, and user-focused React front-end
-              applications.
+              applications. */}
+              As an SDE Intern at KPMG India, I took charge of developing two MERN stack tools, elevating team efficiency by 50%. I honed skills in ReactJS, NodeJS, ExpressJS, and MongoDB, enhancing my technical expertise while contributing to project success.
+            </p>
+          </VerticalTimelineElement>
+
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            date="Jan 2023 - present"
+            iconStyle={{ background: "#e9d35b", color: "#fff" }}
+            icon={<WorkIcon />}
+          >
+            <h3 className="vertical-timeline-element-title">
+              Software Developer Engineer - KPMG India
+            </h3>
+            <h4 className="vertical-timeline-element-subtitle">
+              Gurugram, India
+            </h4>
+            <p>
+              At KPMG India, I played a pivotal role in
+              spearheading web application development using the MERN stack.
+              This effort resulted in an impressive 80% increase in team
+              productivity, highlighting my contributions to the company's
+              success, as well as a notable 60% improvement in user experience.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

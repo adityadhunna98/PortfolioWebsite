@@ -74,30 +74,33 @@ function Home() {
               About Me
             </p>
             <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-              Hello! I'm Aditya Dhunna, a B.Tech student from IPEC(AKTU). I'm
+              {/* Hello! I'm Aditya Dhunna, a B.Tech student from IPEC(AKTU). I'm
               currently pursuing my degree in ECE and have gained real-world
               experience through internships at KPMG India and Octro Inc. My
               passion lies in website development, and I have hands-on
               experience in ReactJS, MYSQL, Flask,MERN Stack. I'm a dedicated
               learner, constantly improving my skills and staying updated with
-              industry trends.
+              industry trends. */}
+              I'm Aditya Dhunna, a dedicated professional holding a B.Tech degree in Electronics and Communications Engineering from Inderprastha Engineering College, AKTU, India. Currently, I'm a Software Development Engineer at KPMG India, specializing in web development.
             </p>
             <br></br>
             <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-              Apart from my academic pursuits, I'm enthusiastic about Cricket,
+              {/* Apart from my academic pursuits, I'm enthusiastic about Cricket,
               Music, Travelling, which adds to my well-rounded personality. I
               believe in "designing websites that leave an impression." and
               strive to deliver high-quality work that exceeds expectations. I'm
               committed to maintaining a healthy work-life balance and actively
-              engaging in my community.
+              engaging in my community. */}
+              During my tenure at KPMG India, I've contributed significantly to web-based application development using the MERN stack. I've designed four custom tools that led to an 80% boost in team productivity and a 60% improvement in the user experience.
             </p>
             <br></br>
             <p className="about-info md:text-lg text-base tracking-wider leading-relaxed">
-              I'm excited to showcase my skills and projects through my
+              {/* I'm excited to showcase my skills and projects through my
               portfolio website and explore new opportunities in website
               development. Please feel free to browse my portfolio and reach out
               to me for inquiries or collaborations. Let's create amazing
-              websites together{" "}
+              websites together{" "} */}
+              I'm not just a tech enthusiast; I believe in maintaining a well-rounded lifestyle. My interests span Cricket, Music, and Travel, adding depth to my problem-solving abilities. With a strong academic foundation, including an 8.21/10 CGPA in my undergraduate studies, I consistently demonstrate dedication to excellence. I'm excited to showcase my skills and projects through my portfolio website and explore new opportunities in website development. Let's make an impact together{" "}
               <a href="mailto:adityadhunna98@gmail.com" target="__blank">
                 adityadhunna98@gmail.com
               </a>
